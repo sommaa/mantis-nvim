@@ -1,1 +1,1 @@
-require("mantis").load "mantis"
+require("mantis").load()
