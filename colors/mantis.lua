@@ -1,1 +1,1 @@
-require("mantis").load()
+require("mantis-nvim").load()
