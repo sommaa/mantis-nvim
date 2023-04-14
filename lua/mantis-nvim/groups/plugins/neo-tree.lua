@@ -1,5 +1,6 @@
 local function callback()
   return {
+    NeoTreeDirectoryName = { fg = C.green },
     NeoTreeDirectoryIcon = { fg = C.green },
     NeoTreeRootName = { fg = C.text, bold = true },
     NeoTreeFileName = { fg = C.text },
