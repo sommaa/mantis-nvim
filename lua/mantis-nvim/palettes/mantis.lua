@@ -25,7 +25,7 @@ local colors = {
   surface0 = "#252931",
   base = "#15171a",
   mantle = "#15171a",
-  crust = "#17171a",
+  crust = "#15171a",
   -- icon colors
   c = "#519aba",
   css = "#61afef",
