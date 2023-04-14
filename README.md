@@ -157,3 +157,7 @@ Packer:
 ```lua
  use "sommaa/mantis-nvim"
 ```
+
+## :rose: Heavily ispirated by:
+
+- [Astrotheme](https://github.com/AstroNvim/astrotheme)
