@@ -1,0 +1,1 @@
+require("mantis").load "mantis"
