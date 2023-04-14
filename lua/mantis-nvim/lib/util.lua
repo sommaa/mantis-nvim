@@ -4,7 +4,7 @@ function M.reload(opts)
   if vim.g.colors_name then vim.cmd.highlight "clear" end
   if vim.fn.exists "syntax_on" then vim.cmd.syntax "reset" end
   vim.o.termguicolors = opts.termguicolors
-  vim.g.colors_name = "mantis"
+  vim.g.colors_name = "mantis-nvim"
 end
 
 function M.get_plugin_list(opts)
@@ -13,7 +13,7 @@ function M.get_plugin_list(opts)
 
   local plugins = {}
 
-  for plugin, module in pairs(require "mantis.groups.plugins") do
+  for plugin, module in pairs(require "mantis-nvim.groups.plugins") do
     local load = opts.plugins[plugin]
     if load == nil then load = opts.plugin_default end
     if load == "auto" then
@@ -40,7 +40,7 @@ function M.get_hl_modules(highlights, path, modules)
 end
 
 function M.set_palettes(opts)
-  local palette = require("mantis.palettes." .. opts.palette)
+  local palette = require("mantis-nvim.palettes." .. opts.palette)
   palette = vim.tbl_deep_extend("force", palette, opts.palettes.global)
   return vim.tbl_deep_extend("force", palette, opts.palettes[opts.palette])
 end
