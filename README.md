@@ -92,7 +92,7 @@ require("mantis-nvim").setup({
   },
 
   palettes = {
-    mantis = {          -- Extend or modify astrodarks palette colors
+    mantis = {          -- Extend or modify mantis palette colors
       red = "#800010",      -- Overrides mantis red color
     },
   },
